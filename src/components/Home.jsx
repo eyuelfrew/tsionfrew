@@ -19,9 +19,9 @@ const Home = () => {
             <p className="text-purple-800 font-extrabold text-2xl">
               I'm <span className="my-name font-medium">Tsion Frew</span>
               <br />
-              <span className="my-name font-medium">
+              {/* <span className="my-name font-medium">
                 Receptionist & Busness Manager
-              </span>
+              </span> */}
             </p>
             <div className="flex items-start mt-36">
               <div className="card">

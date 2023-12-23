@@ -1,6 +1,6 @@
 import Home from "./components/Home";
 import Navbar from "./components/Navbar";
-// import ScrollReveal from "scrollreveal";
+import { Link } from "react-scroll";
 function App() {
   return (
     <>
@@ -11,6 +11,7 @@ function App() {
         <div>
           <Home></Home>
         </div>
+        <div id="about"></div>
       </section>
     </>
   );
