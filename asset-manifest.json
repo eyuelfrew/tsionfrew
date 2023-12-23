@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/tsionfrew/static/css/main.b5669863.css",
-    "main.js": "/tsionfrew/static/js/main.07141bdc.js",
+    "main.js": "/tsionfrew/static/js/main.5e939587.js",
     "static/js/787.dded942e.chunk.js": "/tsionfrew/static/js/787.dded942e.chunk.js",
     "static/media/tsionfrew.png": "/tsionfrew/static/media/tsionfrew.68a3475140ad3d7f38ba.png",
     "static/media/logo.png": "/tsionfrew/static/media/logo.ad8ba92056e1c3b70340.png",
     "index.html": "/tsionfrew/index.html",
     "main.b5669863.css.map": "/tsionfrew/static/css/main.b5669863.css.map",
-    "main.07141bdc.js.map": "/tsionfrew/static/js/main.07141bdc.js.map",
+    "main.5e939587.js.map": "/tsionfrew/static/js/main.5e939587.js.map",
     "787.dded942e.chunk.js.map": "/tsionfrew/static/js/787.dded942e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.b5669863.css",
-    "static/js/main.07141bdc.js"
+    "static/js/main.5e939587.js"
   ]
 }
