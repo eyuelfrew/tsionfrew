@@ -3,17 +3,17 @@ import ScrollReveal from "scrollreveal";
 const About = () => {
   useEffect(() => {
     ScrollReveal().reveal(".ma-div-one", {
-      delay: 1000,
+      delay: 200,
       reset: true,
-      duration: 2000,
+      duration: 1000,
     });
     ScrollReveal().reveal(".ma-div-two", {
-      delay: 600,
+      delay: 200,
       reset: true,
-      duration: 2000,
+      duration: 1500,
     });
     ScrollReveal().reveal(".ma-div-three", {
-      delay: 1400,
+      delay: 200,
       reset: true,
       duration: 2000,
     });
