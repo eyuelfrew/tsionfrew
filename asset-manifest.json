@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/tsionfrew/static/css/main.d2224c06.css",
-    "main.js": "/tsionfrew/static/js/main.96f97ec6.js",
+    "main.css": "/tsionfrew/static/css/main.5af0e2c2.css",
+    "main.js": "/tsionfrew/static/js/main.a4cac884.js",
     "static/js/787.dded942e.chunk.js": "/tsionfrew/static/js/787.dded942e.chunk.js",
     "static/media/tsionfrew.png": "/tsionfrew/static/media/tsionfrew.68a3475140ad3d7f38ba.png",
     "static/media/logo.png": "/tsionfrew/static/media/logo.ad8ba92056e1c3b70340.png",
     "index.html": "/tsionfrew/index.html",
-    "main.d2224c06.css.map": "/tsionfrew/static/css/main.d2224c06.css.map",
-    "main.96f97ec6.js.map": "/tsionfrew/static/js/main.96f97ec6.js.map",
+    "main.5af0e2c2.css.map": "/tsionfrew/static/css/main.5af0e2c2.css.map",
+    "main.a4cac884.js.map": "/tsionfrew/static/js/main.a4cac884.js.map",
     "787.dded942e.chunk.js.map": "/tsionfrew/static/js/787.dded942e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d2224c06.css",
-    "static/js/main.96f97ec6.js"
+    "static/css/main.5af0e2c2.css",
+    "static/js/main.a4cac884.js"
   ]
 }
