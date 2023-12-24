@@ -30,7 +30,7 @@ const Home = () => {
   return (
     <div
       id="home"
-      className="flex flex-col items-center sm:flex-row sm:justify-around "
+      className="flex flex-col items-center sm:flex-row sm:justify-around h-screen"
     >
       <div className="sm:text-left sm:mt-0">
         <h1 className="intro-text">Hello there,</h1>
