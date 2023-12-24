@@ -1,5 +1,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
+import Typed from "typed.js";
 import React from "react";
+import { useEffect, useRef } from "react";
 import {
   FaFacebook,
   FaInstagram,
@@ -10,20 +12,35 @@ import "../App.css";
 const photo = require("./../assets/tsionfrew.png");
 
 const Home = () => {
+  const el = useRef(null);
+  useEffect(() => {
+    const typed = new Typed(el.current, {
+      strings: ["Tsion Frew", "", "Receptionist", "Manager", "Counciler"],
+      startDelay: 300,
+      typeSpeed: 100,
+      backSpeed: 100,
+      backDelay: 100,
+      loop: true,
+      showCursor: true,
+    });
+    return () => {
+      typed.destroy();
+    };
+  }, []);
   return (
-    <div className="flex flex-col items-center sm:flex-row sm:justify-around ">
+    <div
+      id="home"
+      className="flex flex-col items-center sm:flex-row sm:justify-around "
+    >
       <div className="sm:text-left sm:mt-0">
         <h1 className="intro-text">Hello there,</h1>
         <div className=" sm:flex-row">
-          <div>
+          <div className="w-full">
             <p className="text-purple-800 font-extrabold text-2xl">
-              I'm <span className="my-name font-medium">Tsion Frew</span>
+              I'm <span ref={el} className="my-name font-medium "></span>
               <br />
-              {/* <span className="my-name font-medium">
-                Receptionist & Busness Manager
-              </span> */}
             </p>
-            <div className="flex items-start mt-36">
+            <div className="flex  items-start sm:mt-7 lg:mt-36">
               <div className="card">
                 <a className="socialContainer containerOne" href="#">
                   <FaInstagram className="socialSvg instagramSvg" />

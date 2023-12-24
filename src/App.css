@@ -1,9 +1,19 @@
+html {
+  scroll-behavior: smooth;
+}
 .intro-text {
   font-size: 4rem;
 }
 .my-name {
   color: var(--optional-color);
   font-size: 3rem;
+}
+.typed-cursor {
+  font-size: 3rem;
+  opacity: 1;
+  -webkit-animation: blink 0.7s infinite;
+  -moz-animation: blink 0.7s infinite;
+  animation: blink 0.7s infinite;
 }
 nav {
 }
@@ -19,7 +29,7 @@ nav {
   justify-content: center;
   padding: 25px 25px;
   gap: 20px;
-  box-shadow: 0px 0px 20px var(--secondary-color);
+  /* box-shadow: 0px 0px 20px var(--secondary-color); */
 }
 
 /* for all social containers*/
@@ -27,7 +37,7 @@ nav {
   width: 52px;
   height: 52px;
   border-radius: 50%;
-  background-color: rgb(44, 44, 44);
+  background-color: var(--secondary-color);
   display: flex;
   align-items: center;
   justify-content: center;
