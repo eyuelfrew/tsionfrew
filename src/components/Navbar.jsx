@@ -12,7 +12,7 @@ const Navbar = () => {
     setToggle(!isToggle);
   };
   return (
-    <nav className=" w-full top-0 left-0 h-20 ">
+    <nav className="z-10 w-full top-0 left-0 h-20  bg-white">
       <div className="max-w-full mx-auto ">
         <div className="flex justify-between ">
           <div>

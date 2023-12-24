@@ -2,6 +2,7 @@
 import Typed from "typed.js";
 import React from "react";
 import { useEffect, useRef } from "react";
+import ScrollReveal from "scrollreveal";
 import {
   FaFacebook,
   FaInstagram,
@@ -14,6 +15,12 @@ const photo = require("./../assets/tsionfrew.png");
 const Home = () => {
   const el = useRef(null);
   useEffect(() => {
+    ScrollReveal().reveal(".ma-div-pic", {
+      delay: 200,
+      reset: true,
+      useDelay: "onload",
+      duration: 1500,
+    });
     const typed = new Typed(el.current, {
       strings: ["Tsion Frew", "", "Receptionist", "Manager", "Counciler"],
       startDelay: 300,
@@ -30,7 +37,7 @@ const Home = () => {
   return (
     <div
       id="home"
-      className="flex flex-col items-center sm:flex-row sm:justify-around h-screen"
+      className="flex flex-col items-center  sm:flex-row sm:justify-around h-screen"
     >
       <div className="sm:text-left sm:mt-0">
         <h1 className="intro-text">Hello there,</h1>
@@ -62,8 +69,8 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="mt-4 sm:mt-0">
-        <img src={photo} alt="" width={400} />
+      <div className="mt-4 sm:mt-0 ">
+        <img src={photo} alt="" width={400} className="ma-div-pic" />
       </div>
     </div>
   );
