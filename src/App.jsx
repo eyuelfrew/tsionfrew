@@ -30,12 +30,8 @@ function App() {
   return (
     <>
       <section>
-        <div style={{ position: "sticky", top: 0 }} className="bg-white">
-          <Navbar />
-        </div>
-        <div id="home">
-          <Home></Home>
-        </div>
+        <Navbar />
+        <Home />
         <About />
         <Skill />
         <Portfolio />
@@ -43,6 +39,7 @@ function App() {
         <button
           id="back-to-top"
           onClick={scroolTop}
+          className="sm:-ml-40"
           style={{ display: vissible ? "inline" : "none" }}
         >
           <FaArrowUp color="white" />

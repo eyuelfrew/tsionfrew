@@ -12,13 +12,17 @@ const Navbar = () => {
     setToggle(!isToggle);
   };
   return (
-    <nav className="z-10 w-full top-0 left-0 h-20  bg-white">
+    <nav className=" w-full top-0 left-0 h-20 mb-0 bg-white sticky">
       <div className="max-w-full mx-auto ">
         <div className="flex justify-between ">
           <div>
-            <Link to={"home"} duration={500} className="flex">
+            <Link
+              to={"home"}
+              duration={500}
+              className="flex  hover:scale-125 cursor-pointer duration-200"
+            >
               <img src={Logo} alt="ZION" className="h-26 w-24 " />
-              <span className="font-semibold text-gray-500 pe-5"></span>
+              <span className="font-semibold text-gray-500 pe-5 "></span>
             </Link>
           </div>
           <div className="hidden lg:flex  items-center space-x-1 mx-24">
@@ -77,47 +81,55 @@ const Navbar = () => {
             </button>
           </div>
         </div>
+        {isToggle ? (
+          <div className="lg:hidden md:hidden  mobile-menu bg-white -mt-5 text-center ">
+            <button type="button" class="bg-indigo-500 ..." disabled>
+              <svg
+                class="animate-spin h-5 w-5 mr-3 ..."
+                viewBox="0 0 24 24"
+              ></svg>
+              Processing...
+            </button>
+            <ul className="">
+              <li className="active">
+                <Link
+                  to={"home"}
+                  duration={500}
+                  className="py-4 px-2 text-pink-500 hover:cursor-pointer rounded-lg border-green-500 text-2xl font-semibold "
+                >
+                  Home
+                </Link>
+              </li>
+              <li>
+                <a
+                  href="#services"
+                  className="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300"
+                >
+                  Services
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#about"
+                  className="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300"
+                >
+                  About
+                </a>
+              </li>
+              <li>
+                <Link
+                  href="#contact"
+                  className="block text-sm px-2 py-4 bg-pink-600 hover:bg-green-500 transition duration-300"
+                >
+                  Contact Me
+                </Link>
+              </li>
+            </ul>
+          </div>
+        ) : (
+          <></>
+        )}
       </div>
-      {isToggle ? (
-        <div className="lg:hidden md:hidden  mobile-menu">
-          <ul className="">
-            <li className="active">
-              <a
-                href="index.html"
-                className="block text-sm px-2 py-4 text-white bg-green-500 font-semibold"
-              >
-                Home
-              </a>
-            </li>
-            <li>
-              <a
-                href="#services"
-                className="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300"
-              >
-                Services
-              </a>
-            </li>
-            <li>
-              <a
-                href="#about"
-                className="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300"
-              >
-                About
-              </a>
-            </li>
-            <li>
-              <Link
-                href="#contact"
-                className="block text-sm px-2 py-4 bg-pink-600 hover:bg-green-500 transition duration-300"
-              >
-                Contact Me
-              </Link>
-            </li>
-          </ul>
-        </div>
-      ) : (
-        <></>
-      )}
     </nav>
   );
 };
