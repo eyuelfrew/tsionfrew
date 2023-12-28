@@ -44,7 +44,7 @@ const Home = () => {
           ref={el}
           className="text-5xl bg-gradient-to-r from-pink-300 to-pink-600 bg-clip-text text-transparent"
         ></span>
-        <div className="animate-pulse animate-infinite animate-duration-[2000ms] animate-delay-0 mx-auto bg-gradient-to-b from-pink-500 to-pink-200 rounded-full w-80 h-80 overflow-hidden">
+        <div className=" animate-infinite animate-duration-[2000ms] animate-delay-0 mx-auto bg-gradient-to-b from-pink-500 to-pink-200 rounded-full w-80 h-80 overflow-hidden">
           <img src={photo} alt="ZION" className="max-h-min b " />
         </div>
       </div>
